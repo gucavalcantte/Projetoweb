@@ -31,7 +31,7 @@
                 </div>
                 <div class="form-group">
                         <label for="exampleInputEmail1">Semestre </label>
-                        <input required name="semestre" type="text" class="form-control" id="curso" value="<?= $semestre ?>">
+                        <input required name="semestre" type="text" class="form-control" id="semestre">
                         <small id="emailHelp" class="form-text text-muted">ex: 1,2,3 Semestre</small>
                     </div>
                 <div class="form-group">
