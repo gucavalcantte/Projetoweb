@@ -1,0 +1,39 @@
+body {
+    padding-top: 70px;
+    padding-bottom: 30px;
+  }
+  
+  .theme-dropdown .dropdown-menu {
+    position: static;
+    display: block;
+    margin-bottom: 20px;
+  }
+  
+  .theme-showcase > p > .btn {
+    margin: 5px 0;
+  }
+  
+  .theme-showcase .navbar .container {
+    width: auto;
+  }
+
+  .btn1 {
+  font-family: arial;
+  font-size:14px;
+  text-transform: uppercase;
+  font-weight: 700px;
+  border:none;
+  padding:10px;
+  cursor: pointer;
+}
+.btn-green{
+  background:green;
+  color:#fff;
+  box-shadow:0 5px 0 #006000;
+}
+.btn-green:hover{
+  background:#006000;
+  color:#fff;
+  box-shadow:0 5px 0 #003f00;
+  
+}
