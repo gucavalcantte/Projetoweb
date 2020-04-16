@@ -36,17 +36,22 @@
                     </div>
                 <div class="form-group">
                     <label>Turmas</label>
-                    <input required name="turmas" type="text" class="form-control" id="turmas">
+                    <input required name="turmas" type="text" class="form-control" id="turma">
                     <small class="form-text text-muted">ex: DS4P17</small>
+                </div>
+                <div class="form-group">
+                    <label>Período</label>
+                    <input required name="periodo" type="text" class="form-control" id="periodo">
+                    <small class="form-text text-muted">ex: Manhã, Matutino, Noturno</small>
                 </div>
                 <div class="form-group">
                     <label>Sala</label>
                     <input required name="sala" type="text" class="form-control" id="salas">
-                    <small class="form-text text-muted">ex: F45, G30</small>
+                    <small class="form-text text-muted">ex: F45, F46</small>
                 </div>
                 <div class="form-group">
                     <label>Bloco</label>
-                    <input required name="bloco" type="text" class="form-control" id="turmas">
+                    <input required name="bloco" type="text" class="form-control" id="bloco">
                     <small class="form-text text-muted">ex: A,B,C</small>
                 </div>
                 <div class="form-group">

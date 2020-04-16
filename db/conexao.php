@@ -1,3 +1,3 @@
 <?php
 
-$connection = new mysqli("localhost", "root", "", "pim");
+$connection = new mysqli("localhost", "root", "", "unisalas");

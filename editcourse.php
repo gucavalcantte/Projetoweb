@@ -13,7 +13,7 @@ if (!isset($_SESSION["user"])) {
 $id = $_GET["course"];
 
 //...montamos a consulta que será realizada....
-$stmt = $connection->prepare("SELECT * FROM `curso` WHERE id = ?"); //
+$stmt = $connection->prepare("SELECT * FROM `cursos` WHERE id = ?"); //
 //passamos o id como parâmetro, do tipo i = int, inteiro...
 $stmt->bind_param('s', $id);
 //...mandamos executar a consulta...
@@ -27,6 +27,7 @@ $aux_query = $result->fetch_assoc();
 $curso = $aux_query["curso"];
 $sala = $aux_query["sala"];
 $semestre = $aux_query["semestre"];
+$periodo = $aux_query["periodo"];
 $bloco = $aux_query["bloco"];
 $andar = $aux_query["andar"];
 $turma = $aux_query["turma"];
@@ -67,6 +68,11 @@ $stmt->close();
                         <input required name="turma" type="text" class="form-control" id="turmas" value="<?= $turma ?>">
                         <small class="form-text text-muted">ex: DS4P17</small>
                     </div>
+                    <div class="form-group">
+                    <label>Período</label>
+                    <input required name="periodo" type="text" class="form-control" id="periodo" value="<?= $periodo ?>">
+                    <small class="form-text text-muted">ex: Manhã, Matutino, Noturno</small>
+                </div>
                     <div class="form-group">
                         <label>Sala</label>
                         <input required name="sala" type="text" class="form-control" id="salas" value="<?= $sala ?>">

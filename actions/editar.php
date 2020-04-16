@@ -10,10 +10,11 @@ if (isset($_POST['id'])) {
     $semestre = $_POST['semestre'];
     $bloco = $_POST['bloco'];
     $andar = $_POST['andar'];
+    $periodo = $_POST['periodo'];
     $id = $_POST['id'];
 
-    $stmt = $connection->prepare("UPDATE `curso` SET `curso`=?, `turma`=?, `sala`=?, `semestre`=?, `bloco`=?, `andar`=? WHERE id = ?");
-    $stmt->bind_param('sssissi', $curso, $turma, $sala, $semestre, $bloco, $andar, $id);
+    $stmt = $connection->prepare("UPDATE `cursos` SET `curso`=?, `turma`=?, `sala`=?, `semestre`=?, `bloco`=?, `andar`=?, `periodo`=? WHERE id = ?");
+    $stmt->bind_param('sssisssi', $curso, $turma, $sala, $semestre, $bloco, $andar, $periodo, $id);
 
     if ($stmt->execute()) {
         header("Location: ../index.php");
